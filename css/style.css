@@ -1,0 +1,148 @@
+/* Tag Selector */
+body {
+    background-color: #00FFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* ID Selector - unique for navigation */
+#navbar {
+    background-color: #009df6;
+    padding: 15px;
+    text-align: right;
+}
+
+/* Class Selector - reusable links */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-right: 15px;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+/* ID Selector - unique heading for each page */
+#page-heading {
+    background-color: #CCCCFF;
+    color: #000080;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* ID Selector - unique footer */
+#footer {
+    background-color: #009df6;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Class Selector - group container for shoes */
+.shoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Class Selector - reusable shoe cards */
+.shoe-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #999;
+    margin: 15px;
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+.shoe-card:hover {
+    transform: scale(1.03);
+}
+
+/* Class Selector - shoe images */
+.shoe-img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Class Selector - price tags for shoes */
+.shoe-price {
+    margin: 10px 0;
+    background-color: #ee7700;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Tag Selector for buttons */
+button {
+    margin-top: 10px;
+    background-color: #009df6;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007acc;
+}
+
+/* PSA Page Styles */
+.psa-heading {
+    text-align: center;
+    color: #ee7700;
+    margin-top: 30px;
+    font-size: 40px;
+    animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.video-container {
+    text-align: center;
+    margin-top: 40px;
+    animation: fadeIn 2s ease forwards;
+}
+
+.psa-message {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 700px;
+    animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
